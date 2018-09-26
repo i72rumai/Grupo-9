@@ -20,9 +20,9 @@
 * git  config  --global  color.ui true
 ---
 ---
-_Listado de la configuracion:_
+*Listado de la configuracion:*
 ---
 * git  config  --list
 ---
 ---
-!(/home/nacho/Descargas/GIT-interview-Question-and-Answers.png)
+![GIT](https://i1.wp.com/foxutech.com/wp-content/uploads/2018/02/GIT-interview-Question-and-Answers.png?fit=1100%2C481&ssl=1)
