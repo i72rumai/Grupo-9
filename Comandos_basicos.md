@@ -135,3 +135,28 @@
 ---
 ---
 ---
+**Comandos basicos VI**
+---
+*Listar el contenido del repositorio de git:*
+---
+* git ls-tree  master
+---
+* git ls-tree  master ^^^
+---
+* git ls-tree  master ~3
+---
+---
+*Log en una lınea:*
+---
+* git  log  --oneline
+---
+---
+*Log con los tres  ́ultimos commits en una lınea:*
+---
+* git  log  --oneline  -3
+---
+---
+*Para mas opciones consultar documentacion de git.*
+---
+---
+---
