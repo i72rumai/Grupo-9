@@ -1,26 +1,26 @@
 **Comandos basicos I**
 ---
 ---
-*Iniciar repositorio en un directorio:*
+* Iniciar repositorio en un directorio:
 ---
 git init
 ---
 ---
-*Agregar cambios al area de staging:*
+* Agregar cambios al area de staging:
 ---
 git add
 ---
 ---
-*Validar cambios en el repositorio:*  
+* Validar cambios en el repositorio:  
 ---
 git commit -m "Mensaje"
 ---
 ---
-*Hacer los dos pasos anteriores en uno:*  
+* Hacer los dos pasos anteriores en uno:  
 ---
 git commit -am "Mensaje"
 ---
 ---
-*Historial de commits:*
+* Historial de commits:
 ---
 git log
