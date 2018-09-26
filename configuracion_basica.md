@@ -20,7 +20,7 @@
 * git  config  --global  color.ui true
 ---
 ---
-*Listado de la configuracion:*
+_Listado de la configuracion:_
 ---
 * git  config  --list
 ---
