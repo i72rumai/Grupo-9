@@ -2,7 +2,9 @@
 ---
 * Nombre del administrador:
 ---
+
  `git  config  --global  user.name "Ignacio Antonio Ruiz Martin-Romo"`
+
 ---
 ---
 * Correo electronico:
