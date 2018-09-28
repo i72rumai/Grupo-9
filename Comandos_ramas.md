@@ -5,20 +5,17 @@ Las ramas se utilizan para desarrollar versiones del software que, una vez compl
 
 **Comandos Ramas**
 
-1.Ver listado de ramas:
-2.git branch
+#Ver listado de ramas:
+##git branch
 
-Crear una rama:
-#‘git branch nombre_rama‘
+Crear una rama: git branch nombre_rama
 
-Cambiarnos a una rama:
-#git checkout nombre_rama
+Cambiarnos a una rama: git checkout nombre_rama
 
-Crear una rama y moverse en un solo paso
----'git checkout -b nombre_rama'
+Crear una rama y moverse en un solo paso: git checkout -b nombre_rama
 
 Comparar ramas:
-#‘git diff nombre_rama..nombre_rama‘
+git diff nombre_rama..nombre_rama‘
 
 Ver ramas identicas a la actual:
 #‘git branch --merged‘
