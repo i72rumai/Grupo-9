@@ -6,12 +6,15 @@ Las ramas se utilizan para desarrollar versiones del software que, una vez compl
 **Comandos Ramas**
 
 Ver listado de ramas:
+---
 'git branch'
 
 Crear una rama:
+---
 'git branch nombre_rama'
 
 Cambiarnos a una rama:
+---
 'git checkout nombre_rama'
 
 Crear una rama y moverse en un solo paso:
