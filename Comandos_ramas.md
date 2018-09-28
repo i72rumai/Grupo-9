@@ -7,7 +7,7 @@ Las ramas se utilizan para desarrollar versiones del software que, una vez compl
 
 Ver listado de ramas:
 'git branch'
->
+
 Crear una rama:
 'git branch nombre_rama'
 
