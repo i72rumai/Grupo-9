@@ -5,8 +5,8 @@ Las ramas se utilizan para desarrollar versiones del software que, una vez compl
 
 **Comandos Ramas**
 
-Ver listado de ramas:
-#‘git branch‘
+1.Ver listado de ramas:
+2.git branch
 
 Crear una rama:
 #‘git branch nombre_rama‘
