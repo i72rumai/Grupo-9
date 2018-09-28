@@ -1,5 +1,5 @@
 **Comandos Ramas**
- ̃ ̃ ̃
+
 Ver listado de ramas:
 'git branch'
 
@@ -14,7 +14,7 @@ Crear una rama y moverse en un paso:
 
 Comparar ramas:
 'git diff nombre_rama..nombre_rama'
- ̃ ̃ ̃  ̃ ̃ ̃
+
 Ver ramas identicas a la actual:
 'git branch --merged'
 
@@ -30,7 +30,7 @@ Integrar ramas a la actual:
 
 Resolver conflictos (se suele hacer manualmente):
 'git merge --abort'
- ̃ ̃ ̃
+
 Almacenar cambios temporales:
 'git stash save *"Mensaje"*'
 
@@ -46,5 +46,3 @@ Eliminar un cambio temporal:
 Aplicar cambio del stash:
 'git stash apply nombre_stash'
 'git stash pop nombre_stash'
- ̃ ̃ ̃
-
