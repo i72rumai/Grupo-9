@@ -1,20 +1,18 @@
 **Ramas**
+---
 ![](https://cdn-images-1.medium.com/max/1200/1*br5JNMOLPTG36gMzBELQ-g.png)
 Las ramas se utilizan para desarrollar versiones del software que, una vez completadas, se agregan a la rama principal o rama master
 
 
 **Comandos Ramas**
-
-Ver listado de ramas:
 ---
+Ver listado de ramas:
 'git branch'
 
 Crear una rama:
----
 'git branch nombre_rama'
 
 Cambiarnos a una rama:
----
 'git checkout nombre_rama'
 
 Crear una rama y moverse en un solo paso:
