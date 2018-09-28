@@ -1,5 +1,5 @@
 **Ramas**
-!(https://cdn-images-1.medium.com/max/1200/1*br5JNMOLPTG36gMzBELQ-g.png)
+!https://cdn-images-1.medium.com/max/1200/1*br5JNMOLPTG36gMzBELQ-g.png
 Las ramas se utilizan para desarrollar versiones del software que, una vez completadas, se agregan a la rama principal o rama master
 
 
