@@ -31,7 +31,7 @@ git branch -d nombre_rama
 git branch -D nombre_rama
 
 Integrar ramas a la actual:
-git merge nombre_rama
+'git merge nombre_rama'
 
 Resolver conflictos (se suele hacer manualmente):
 git merge --abort
