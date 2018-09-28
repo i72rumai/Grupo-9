@@ -14,11 +14,8 @@ Crear una rama:
 Cambiarnos a una rama:
 #git checkout nombre_rama
 
-Crear una rama y moverse en un solo paso:
-'git checkout -b nombre_rama'
-
-Crear una rama y moverse en un paso:
-#‘git checkout -b nombre_rama‘
+Crear una rama y moverse en un solo paso
+---'git checkout -b nombre_rama'
 
 Comparar ramas:
 #‘git diff nombre_rama..nombre_rama‘
