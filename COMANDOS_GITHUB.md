@@ -1,5 +1,4 @@
 **Comandos GitHub I**
-
 ---
 ---
 
@@ -43,9 +42,8 @@
 
 ---
 ---
-
 **Comandos GitHub II**
-
+---
 ---
 
 # *Ver branches remotos:*
