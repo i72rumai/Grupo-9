@@ -35,12 +35,13 @@
 
 ---
 
-# *A˜nadir cambios del repositorio remoto al local:*
+# *Añadir cambios del repositorio remoto al local:*
 
 ---
 
 ## git pull
 
+---
 ---
 
 **Comandos GitHub II**
@@ -86,7 +87,7 @@
 
 ---
 
-## 3. A˜nadir cambios a repositorio remoto:
+## 3. Añadir cambios a repositorio remoto:
 
 ---
 
@@ -102,7 +103,7 @@
 
 ---
 
-# * Sincronizaci´on y uni´on:
+# * Sincronización y uni´on:
 
 ---
 
@@ -130,7 +131,7 @@
 
 ---
 
-# *Creaci´on:*
+# *Creación:*
 
 ---
 ## 1. Crear branch local.
@@ -164,7 +165,7 @@
 
 ---
 
-# *Eliminaci´on:*
+# *Eliminación:*
 
 ---
 
