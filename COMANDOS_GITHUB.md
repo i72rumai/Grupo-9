@@ -5,42 +5,43 @@
 
 ---
 
-#*Añadir repositorio remoto:*
+# *Añadir repositorio remoto:*
 
 ---
 
-##git remote add origin url
+## git remote add origin url
 
 ---
 
-#*Ver repositorios remotos:*
+# *Ver repositorios remotos:*
 
 ---
 
-##git remote -v
+## git remote -v
 
 ---
 
-#*Eliminar repositorio remoto:*
+# *Eliminar repositorio remoto:*
 
 ---
 
-##git remote rm origin
+## git remote rm origin
 
 ---
 
-#*A˜nadir cambios del repositorio local al remoto:*
+# *Añadir cambios del repositorio local al remoto:*
 
 ---
 
-##git push -u origin master
+## git push -u origin master
 
 ---
 
-#*A˜nadir cambios del repositorio remoto al local:*
+# *A˜nadir cambios del repositorio remoto al local:*
 
 ---
-##git pull
+
+## git pull
 
 ---
 
@@ -48,26 +49,26 @@
 
 ---
 
-#*Ver branches remotos:*
+# *Ver branches remotos:*
 
 ---
 
-##git branch -r
+## git branch -r
 
 ---
 
-#*Ver todos los branches:*
+# *Ver todos los branches:*
 
 ---
-##git branch -a
-
----
-
-#*Clonar un repositorio remoto:*
+## git branch -a
 
 ---
 
-##git clone url
+# *Clonar un repositorio remoto:*
+
+---
+
+## git clone url
 
 ---
 
@@ -75,53 +76,53 @@
 
 ---
 
-#* LOCAL → REMOTO
+# * LOCAL → REMOTO
 
 ---
 
-##1. Cambios en el repositorio local.
+## 1. Cambios en el repositorio local.
 
 ---
 
-##2. Commit de los cambios.
+## 2. Commit de los cambios.
 
 ---
 
-##3. A˜nadir cambios a repositorio remoto:
-
----
-
----
-
-###git push
+## 3. A˜nadir cambios a repositorio remoto:
 
 ---
 
 ---
 
-#* REMOTO → LOCAL
-
----
-
-#* Sincronizaci´on y uni´on:
-
----
-
-###git fetch origin
-
----
-
-###git merge origin / master
+### git push
 
 ---
 
 ---
 
-#* En un solo paso:
+# * REMOTO → LOCAL
 
 ---
 
-##git pull
+# * Sincronizaci´on y uni´on:
+
+---
+
+### git fetch origin
+
+---
+
+### git merge origin / master
+
+---
+
+---
+
+# * En un solo paso:
+
+---
+
+## git pull
 
 ---
 
@@ -131,41 +132,44 @@
 
 ---
 
-#*Creaci´on:*
+# *Creaci´on:*
 
 ---
-##1. Crear branch local.
-
----
-
-##2.Hacer cambios en dicho branch.
+## 1. Crear branch local.
 
 ---
 
-##3.Hacer commit.
+## 2.Hacer cambios en dicho branch.
 
 ---
 
-##4.Copiar el branch al repositorio remoto:
+## 3.Hacer commit.
 
 ---
 
-###git push -u origin branch_remoto
+## 4.Copiar el branch al repositorio remoto:
 
 ---
 
----
-#*Copia:*
-
----
-
-##git checkout -b local remoto
+### git push -u origin branch_remoto
 
 ---
 
 ---
-
-#*Eliminaci´on:*
+# *Copia:*
 
 ---
-##git push origin -- delete branch_remoto
+
+## git checkout -b local remoto
+
+---
+
+---
+
+# *Eliminaci´on:*
+
+---
+
+## git push origin -- delete branch_remoto
+
+---
