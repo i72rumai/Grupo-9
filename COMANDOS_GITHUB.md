@@ -3,7 +3,7 @@
 
 ---
 
-#*A˜nadir repositorio remoto:*
+#*Añadir repositorio remoto:*
 
 ---
 
