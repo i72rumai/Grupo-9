@@ -22,10 +22,10 @@
 
 * El mantenimiento del software es el proceso general de cambiar un sistema después de que éste ha sido entregado. Los cambios se implementan modificando los componentes del sistema existente e introduciendo nuevos componentes cuando sea necesario, el mantenimiento se lleva a cavo de la siguiente manera:
 
-## * Limpieza y revisión al equipo de cómputo de manera que no presente riesgos para los usuarios.
-## * Instalación de actualizaciones al sistema para que no se haga obsoleto.
-## * Revisiones al código de manera que no existan errores (mantenimiento preventivos y correctivo), para evitar pérdidas en tiempo y esfuerzo.
-## * Agregación de nuevos contenidos al menú del sistema, para ofrecerle nuevas funcionalidades al usuario.
+1.  Limpieza y revisión al equipo de cómputo de manera que no presente riesgos para los usuarios.
+2.  Instalación de actualizaciones al sistema para que no se haga obsoleto.
+3.  Revisiones al código de manera que no existan errores (mantenimiento preventivos y correctivo), para evitar pérdidas en tiempo y esfuerzo.
+4. Agregación de nuevos contenidos al menú del sistema, para ofrecerle nuevas funcionalidades al usuario.
 
 
 ---
