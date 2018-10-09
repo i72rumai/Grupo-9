@@ -10,11 +10,15 @@
 * El sistema para administración de los alumnos de la asignatura recibirá actualizaciones cada día, debido a que es un sistema que cuenta con una base de datos, ésta se puede saturar de información ya que los cambios se realizan con mucha frecuencia, por lo tanto, es importante la mejora del servidor y hacer el codigo del sistema más eficiente para darle un mayor rendimiento en su capacidad y velocidad.
 
 * Cambios que necesitará el sistema
-*      Nuevos diseños a la interfaz, de modo que sea más amigable con el usuario, ofrezca una mejora en sus interacciones y un diseño más atractivo.
-*      Mejoras en la sintaxis, como reducción del código, de modo que el programa sea menos pesado para la máquina.
-*      Realizar cambios en el sistema o versiones nuevas, de modo que sea compatible con nuevos sistemas operativos.
-*      Cambios en el equipo de cómputo con mejor rendimiento para contar con un sistema más rápido y eficiente.
-Especificaciones del mantenimiento
+*      Cambio de diseño de la interfaz, para que sea más amigable con el usuario y ofrezca una mejora en sus interacciones.
+*      Reducción del código para que  el programa sea menos pesado.
+*      Realizar cambios en el sistema o versiones nuevas, de modo que sea compatible en especial con Linux, ya que el usuario trabajan en dicho sistema.
+*      Mejorar el rendimiento para contar con un sistema más rápido y eficiente.
+
+---
+---
+
+*Especificaciones del mantenimiento*
 El mantenimiento del software es el proceso general de cambiar un sistema después de que éste ha sido entregado. Estos cambios pueden ir desde los simples hasta los más extensos. Los cambios se implementan modificando los componentes del sistema existente y agregándole nuevos componentes donde sea necesario.
 En el sistema de inventario para ferreterías el mantenimiento se llevara de la siguiente manera:
 ü  Limpieza y revisión al equipo de cómputo de manera que no presente riesgos para los usuarios.
