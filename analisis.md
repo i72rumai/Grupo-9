@@ -1,11 +1,11 @@
 **ANÁLISIS DE REQUISITOS**
 ---
 ---
-* Proyección a 5 años
+*Proyección a 5 años*
 
-# Tras implementar en la base de datos todos los datos de los alumnos de la asignatura, es necesario darle un mantenimiento adecuado y hacerle cambios si es que éste lo necesita.
+* Tras implementar en la base de datos todos los datos de los alumnos de la asignatura, es necesario darle un mantenimiento adecuado y hacerle cambios si es que éste lo necesita.
 
-# El sistema para administración de los alumnos la asignatura recibirá actualizaciones cada día, debido a que es un sistema que cuenta con una base de datos, se corre el riesgo de que ésta se pueda saturar de información ya que es un cambio que se realiza con mucha frecuencia, por lo tanto, es importante el aumento en el poder de almacenamiento del servidor, y mejoras en el código del sistema, para darle un mayor rendimiento en su capacidad y velocidad; También es importante hacer revisiones al equipo, de modo que no existan riesgos como robo o pérdida de información.
+* El sistema para administración de los alumnos la asignatura recibirá actualizaciones cada día, debido a que es un sistema que cuenta con una base de datos, se corre el riesgo de que ésta se pueda saturar de información ya que es un cambio que se realiza con mucha frecuencia, por lo tanto, es importante el aumento en el poder de almacenamiento del servidor, y mejoras en el código del sistema, para darle un mayor rendimiento en su capacidad y velocidad; También es importante hacer revisiones al equipo, de modo que no existan riesgos como robo o pérdida de información.
 
 Cambios que necesitará el sistema
 *      Nuevos diseños a la interfaz, de modo que sea más amigable con el usuario, ofrezca una mejora en sus interacciones y un diseño más atractivo.
