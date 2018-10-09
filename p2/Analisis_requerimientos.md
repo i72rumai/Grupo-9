@@ -21,8 +21,8 @@ buscar un alumno.
 - *TELEFONO:* Este dato no será obligatorio tomarlo, se almacenará un número de
 teléfono correspondiente al contacto del alumno.
 - *EMAIL CORPORATIVO:* Se le asignará a cada alumno un correo, este se formará
-con la estructura i72 + (Dos primeras letras del primer apellido) + (Dos
-primeras letras del segundo apellido) + (Inicial del nombre) + @uco.es.
+con la estructura "i72 + (Dos primeras letras del primer apellido) + (Dos
+primeras letras del segundo apellido) + (Inicial del nombre) + @uco.es".
 - *DIRECCION POSTAL:* Se guardará la dirección del domicilio del alumno.
 - *ULTIMA MATRICULA:* Se guardará el último curso del cual el alumno está
 matriculado, si el alumno esta matriculado aunque solo sea de una asignatura de
