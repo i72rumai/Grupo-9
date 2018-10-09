@@ -1,7 +1,7 @@
 **ANÁLISIS DE REQUISITOS**
 ---
 ---
-*Proyección a 5 años*
+* Proyección a 5 años
 
 # Tras implementar en la base de datos todos los datos de los alumnos de la asignatura, es necesario darle un mantenimiento adecuado y hacerle cambios si es que éste lo necesita.
 
