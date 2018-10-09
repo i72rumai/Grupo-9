@@ -10,10 +10,10 @@
 * El sistema para administración de los alumnos de la asignatura recibirá actualizaciones cada día, debido a que es un sistema que cuenta con una base de datos, ésta se puede saturar de información ya que los cambios se realizan con mucha frecuencia, por lo tanto, es importante la mejora del servidor y hacer el codigo del sistema más eficiente para darle un mayor rendimiento en su capacidad y velocidad.
 
 * Cambios que necesitará el sistema
-*      Cambio de diseño de la interfaz, para que sea más amigable con el usuario y ofrezca una mejora en sus interacciones.
-*      Reducción del código para que  el programa sea menos pesado.
-*      Realizar cambios en el sistema o versiones nuevas, de modo que sea compatible en especial con Linux, ya que el usuario trabajan en dicho sistema.
-*      Mejorar el rendimiento para contar con un sistema más rápido y eficiente.
+- Cambio de diseño de la interfaz, para que sea más amigable con el usuario y ofrezca una mejora en sus interacciones.
+- Reducción del código para que  el programa sea menos pesado.
+- Realizar cambios en el sistema o versiones nuevas, de modo que sea compatible en especial con Linux, ya que el usuario trabajan en dicho sistema.
+- Mejorar el rendimiento para contar con un sistema más rápido y eficiente.
 
 ---
 ---
