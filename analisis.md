@@ -19,7 +19,8 @@
 ---
 
 *Especificaciones del mantenimiento*
-El mantenimiento del software es el proceso general de cambiar un sistema después de que éste ha sido entregado. Estos cambios pueden ir desde los simples hasta los más extensos. Los cambios se implementan modificando los componentes del sistema existente y agregándole nuevos componentes donde sea necesario.
+
+* El mantenimiento del software es el proceso general de cambiar un sistema después de que éste ha sido entregado. Estos cambios pueden ir desde los simples hasta los más extensos. Los cambios se implementan modificando los componentes del sistema existente y agregándole nuevos componentes donde sea necesario.
 En el sistema de inventario para ferreterías el mantenimiento se llevara de la siguiente manera:
 ü  Limpieza y revisión al equipo de cómputo de manera que no presente riesgos para los usuarios.
 ü  Instalación de actualizaciones al sistema para que no se haga obsoleto.
