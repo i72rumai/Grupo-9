@@ -3,7 +3,7 @@
 
 Se lleva a cabo un plan de pruebas, donde se evalua la fiabilidad y funcionalidad.
 Entre las distintas pruebas se encuentra:
-
+---
 - *PRUEBAS DE UNIDAD:* Se han evaluado las distintas funciones que van a
       constituir la base de datos de los alumnos, para ello estas se realizan en
       todos los casos posibles probando asi su correcto funcionamineto.
@@ -15,7 +15,7 @@ Entre las distintas pruebas se encuentra:
 - *PRUEBAS DE ACEPTACIÓN:* Esta prueba se realiza de cara al usuario, verificandose
       otra vez del software, pero siendo evaluado por un usuario que debe definir
       su aceptación.
-
+---
 Las distintas pruebas se van a llevar a cabo en los distintos formularios que
 componen el software, los cuales son:
 
