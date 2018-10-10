@@ -24,7 +24,7 @@ componen el software, los cuales son:
 
     - *Modificar_alumnos:* Realizar cualquier cambio en los datos de cada alumno.
 
-    - *Borrado_alumnos:* Se borran los datos de un alumno de la base de datos, esto
+- *Borrado_alumnos:* Se borran los datos de un alumno de la base de datos, esto
       se realiza buscando al alumno por apellidos, si estos coinciden se pedira el DNI.
 
     - *Mostrar_alumnos:* Muestra por pantalla todos los alumnos de la base de datos.
