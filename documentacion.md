@@ -1,4 +1,4 @@
-PRUEBAS DE SOFTWARE
+  PRUEBAS DE SOFTWARE
 
 Se lleva a cabo un plan de pruebas, donde se evalua la fiabilidad y funcionalidad.
 Entre las distintas pruebas se encuentra:
