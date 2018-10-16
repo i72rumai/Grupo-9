@@ -5,4 +5,4 @@ datos.
 
 (REVERSO)
 
-*Quiero poder visualizar todos los alumnos almacenados en la base de datos
+- Quiero poder visualizar todos los alumnos almacenados en la base de datos
