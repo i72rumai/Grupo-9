@@ -1,6 +1,7 @@
 **(ANVERSO)**
 ---
 Apellidos: López Jiménez | *Buscar alumno*.
+
 DNI: 31025106V  | *Buscar alumno*.
 
 Como usuario, quiero poder buscar un alumno por sus apellidos o DNI y que el
