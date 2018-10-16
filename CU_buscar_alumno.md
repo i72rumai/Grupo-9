@@ -20,7 +20,7 @@
 - El sistema muestra al alumno y todos sus datos por pantalla.
 
 **Flujos alternativos:**
-2. (a) Si al introducir los apellidos del alumno se encuentran coincidencias, el
-    el programa pedirá el DNI.
-2. (b) Si al introducir DNI el alumno no se encuentra en la base de datos, se
-    mostrará un mensaje de error.
+- 2a: Si al introducir los apellidos del alumno se encuentran coincidencias, el
+      el programa pedirá el DNI.
+- 2b: Si al introducir DNI el alumno no se encuentra en la base de datos, se
+      mostrará un mensaje de error.
