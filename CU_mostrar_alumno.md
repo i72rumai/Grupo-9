@@ -14,8 +14,7 @@
 **Flujo principal:**
 
 1. El caso de uso comienza cuando se desean mostrar los alumnos ordenandos.
-2. Se deben mostrar estos de manera ordenada según el usuario desee (alfabeticamente,
-   DNI o curso mas alto matriculado).
+2. Se deben mostrar estos de manera ordenada según el usuario desee (alfabeticamente,DNI o curso mas alto matriculado).
 
 **Postcondiciones:**
 
