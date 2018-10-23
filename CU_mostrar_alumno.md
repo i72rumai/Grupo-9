@@ -1,4 +1,4 @@
-#**Mostrar alumno**
+**Mostrar alumno**
 ---
 
 *Ordenación según:* DNI, alfabeto, curso mas alto matriculado, ascendente y descendente
