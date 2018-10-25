@@ -13,7 +13,7 @@ ID: 3
 
 **Flujo principal:**
 
-1. El caso de uso comienza cuando se desea cambiar el lider de uno de los grupos.
+1. El caso de uso comienza cuando se desea cambiar o asignar el lider de uno de los grupos.
 2. Se comprueba si este equipo tenía ya un lider.
 3. En caso afirmativo se elije cual de los otros componentes del equipo será
    el lider y en caso de no haberlo se asignará uno.
