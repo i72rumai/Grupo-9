@@ -12,8 +12,8 @@
 **Flujo principal:**
 
 1. El caso de uso comienza cuando se desea cambiar borrar la base de datos completa.
-2. Se confirma la existencia de esta y se procede a su borrado.
 
+2. Se confirma la existencia de esta y se procede a su borrado.
 
 **Postcondiciones:**
 
