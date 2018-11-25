@@ -1,0 +1,9 @@
+La practica 3 se compone de la siguiente manera:
+
+- Los archivos 01 y 02 son los que definen el diagrama de clases.
+
+- Los demás archivos definen los diagramas de secuencias:
+
+  + Los impares son los .jpg : 03, 05, 07, 09, 11, 13, 15 y 17.
+
+  + Los pares son los .md : 04, 06, 08, 10, 12, 14, 16, 18.
