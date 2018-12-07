@@ -2,7 +2,8 @@
 ---
 * La prioridad otorgada a cada función es:
 
-&nbsp
+
+  
 
 1. Busca_alumno
 2. Permisos
