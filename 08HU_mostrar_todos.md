@@ -1,6 +1,6 @@
 **HISTORIA DE USUARIO**
 
-Función: Mostar_alumnospor.
+Función: Mostar_todos.
 
 **(ANVERSO)**
 
