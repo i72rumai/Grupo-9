@@ -6,4 +6,4 @@
 
 1. Ignacio Ruiz Martin-Romo: Product_backlog, sprint_backlog y burndown chart.
 2. Alejandro Siles Jiménez: Clases.
-3. Jorge Ramírez Galván:...
+3. Jorge Ramírez Galván: Función mostraralumno y copiaseguridad.
