@@ -1,5 +1,7 @@
 **HISTORIA DE USUARIO**
 
+Función: Copia_seguridad.
+
 **(ANVERSO)**
 
 Como usuario quiero hacer una copia de todos los datos de la base a un archivo

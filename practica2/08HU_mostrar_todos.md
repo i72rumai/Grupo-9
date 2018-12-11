@@ -1,5 +1,7 @@
 **HISTORIA DE USUARIO**
 
+Función: Mostar_todos.
+
 **(ANVERSO)**
 
 Como usuario quiero poder visualizar todos los alumnos almacenados en la base de
@@ -10,4 +12,4 @@ datos, ordenados según, alfabeticamente, curso mas alto matriculado y DNI. De m
 
 - Quiero poder visualizar todos los alumnos almacenados en la base de datos ordenandos.
 - El programa pedira los datos segun de la forma que se desee ordenar.
-- Mostrará los alumnos ordenados de la forma deseada
+- Mostrará los alumnos ordenados de la forma deseada.

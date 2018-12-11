@@ -1,5 +1,8 @@
-**Copia a binario**
+**Copia de seguridad**
 ---
+
+*Breve descripción:* El sistema copia todos los datos de la base a un archivo binario
+                     que el mismo crea.
 
 *Actores principales:* usuario
 
@@ -17,7 +20,8 @@
 **Postcondiciones:**
 
 * El sistema mostrará una confirmación de la copia en archivo binario.
+* Después del programa vuelve al menú.
 
 **Flujos alternativos:**
 
-* Si no existe ningun dato en la base el programa mostrará un mensaje de error.
+3. Esta funcion no posee flujos alternativos.

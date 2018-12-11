@@ -1,5 +1,8 @@
-**Mostrar alumno**
+**Mostrar todos**
 ---
+
+*Breve descripción:* El sistema mostrará todos los alumnos de la base de datos, ordenados según
+                     el usuario indique.
 
 *Ordenación según:* DNI, alfabeto, curso mas alto matriculado, ascendente y descendente
 
@@ -18,8 +21,8 @@
 
 **Postcondiciones:**
 
-* El sistema muestra los alumnos ordenados según se desea.
+* El sistema muestra los alumnos ordenados según se desean y vuelve al menú del programa
 
 **Flujos alternativos:**
 
-* Esta función no posee ningun flujo alternativo
+3. Esta función no posee ningun flujo alternativo.
