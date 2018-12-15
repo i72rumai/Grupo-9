@@ -7,15 +7,17 @@
 #include <string>
 #include "persona.h"
 
+using namespace std;
+
 class Alumno: public Persona
 {
   private:
     int grupo_;
     bool lider_;
   public:
-    Alumno(int grupo, bool lider, std::string dni, std::string NombreCompleto,
-      int telefono, std::string email, int DPostal, std::string FechaNac):Persona(dni,
-      NombreCompleto, telefono, email, DPostal, FechaNac)
+    Alumno(int grupo, bool lider, string dni, string ApellidosNombre,
+      int telefono, string email, int DPostal, string FechaNac):Persona(dni,
+      ApellidosNombre, telefono, email, DPostal, FechaNac)
       {
         grupo_=grupo;
         lider_=lider;
@@ -25,7 +27,7 @@ class Alumno: public Persona
     inline int getGrupo(){return grupo_;};
 
     inline void setLider(bool lider){lider_=lider;};
-    inline bool getLider(){return lider_;}
+    inline bool getLider(){return lider_;};
 
 };
 

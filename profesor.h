@@ -7,15 +7,17 @@
 #include <string>
 #include "persona.h"
 
+using namespace std;
+
 class Profesor: public Persona
 {
   private:
     int CAgenda_;
     int rol_;
   public:
-    Profesor(int CAgenda, int rol, std::string dni, std::string NombreCompleto,
-      int telefono, std::string email, int DPostal, std::string FechaNac):Persona(dni,
-      NombreCompleto, telefono, email, DPostal, FechaNac)
+    Profesor(int CAgenda, int rol, string dni, string ApellidosNombre,
+      int telefono, string email, int DPostal, string FechaNac):Persona(dni,
+      ApellidosNombre, telefono, email, DPostal, FechaNac)
       {
         CAgenda_=CAgenda;
         rol_=rol;
@@ -26,6 +28,8 @@ class Profesor: public Persona
 
     inline void setRol(int rol){rol_=rol;};
     inline int getRol(){return rol_;};
+
+    bool buscarAlumno(string dni);
 };
 
 #endif

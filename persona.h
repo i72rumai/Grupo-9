@@ -6,21 +6,23 @@
 #include <iostream>
 #include <string>
 
+using namespace std;
+
 class Persona
 {
   private:
-    std::string dni_;
-    std::string NombreCompleto_;
+    string dni_;
+    string ApellidosNombre_;
     int telefono_;
-    std::string email_;
+    string email_;
     int DPostal_;
-    std::string FechaNac_;
+    string FechaNac_;
   public:
-    Persona(std::string dni, std::string NombreCompleto, int telefono, std::string email,
-       int DPostal, std::string FechaNac)
+    Persona(string dni, string ApellidosNombre, int telefono, string email,
+       int DPostal, string FechaNac)
     {
       dni_=dni;
-      NombreCompleto_=NombreCompleto;
+      ApellidosNombre_=ApellidosNombre;
       telefono_=telefono;
       email_=email;
       DPostal_=DPostal;
@@ -28,22 +30,22 @@ class Persona
     };
 
     inline void setDNI(std::string dni){dni_=dni;};
-    inline std::string getDNI(){return dni_;};
+    inline string getDNI(){return dni_;};
 
-    inline void setNombreCompleto(std::string NombreCompleto){NombreCompleto_=NombreCompleto;};
-    inline std::string getNombreCompleto(){return NombreCompleto_;};
+    inline void setApellidosNombre(char ApellidosNombre){ApellidosNombre_=ApellidosNombre;};
+    inline string getApellidosNombre(){return ApellidosNombre_;};
 
     inline void setTelefono(int telefono){telefono_=telefono;};
     inline int getTelefono(){return telefono_;};
 
     inline void setEmail(std::string email){email_=email;};
-    inline std::string getEmail(){return email_;};
+    inline string getEmail(){return email_;};
 
     inline void setDPostal(int DPostal){DPostal_=DPostal;};
     inline int getDPostal(){return DPostal_;};
 
     inline void setFechaNac(std::string FechaNac){FechaNac_=FechaNac;};
-    inline std::string getFechaNac(){return FechaNac_;};
+    inline string getFechaNac(){return FechaNac_;};
 };
 
 #endif
