@@ -7,4 +7,5 @@
 1. Ignacio Ruiz Martin-Romo: Product_backlog(10min), sprint_backlog(10min) y burndown chart(15min), función copiaseguridad(30min).
 
 2. Alejandro Siles Jiménez: Clases(1h30min).
+
 3. Jorge Ramírez Galván:.
