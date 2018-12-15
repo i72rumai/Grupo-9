@@ -12,6 +12,7 @@ class Profesor: public Persona
   private:
     int CAgenda_;
     int rol_;
+    int dni_;
   public:
     Profesor(int CAgenda, int rol, std::string dni, std::string NombreCompleto,
       int telefono, std::string email, int DPostal, std::string FechaNac):Persona(dni,
@@ -26,6 +27,7 @@ class Profesor: public Persona
 
     inline void setRol(int rol){rol_=rol;};
     inline int getRol(){return rol_;};
+    void Insertaralumno();
 };
 
 #endif
