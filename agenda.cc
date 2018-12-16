@@ -1,17 +1,15 @@
-//Grupo.cc
-//Contiene las funciones de la clase grupo
+//agenda.cc
+//Contiene las funciones de la clase agenda
 
 #include "grupo.h"
 #include "agenda.h"
 
-//BuscarAlumno
-//Busca un alumno en la base de datos, si existe lo muestra y retorna true, si no, retorna false
 bool Agenda::BuscarAlumno(string dni)
 {
   string linea; //Variable que lee cada dato del fichero binario
   ifstream f; //Declaramos el fichero
 
-  f.open("Alumnos.bin", ios::in | ios::binary);    //  Abrimos el fichero binario
+  f.open("clase.bin", ios::in | ios::binary);    //  Abrimos el fichero binario
 
   if(f.is_open())
   {
@@ -126,7 +124,7 @@ void Agenda::BorrarAlumno(string dni)
   ifstream f;    //Declaramos un fichero de lectura
   ofstream f2;    //Declaramos un fichero de salida
 
-  f.open("alumnos.bin", ios::in | ios::binary);   //Abrimos ambos ficheros
+  f.open("clase.bin", ios::in | ios::binary);   //Abrimos ambos ficheros
   f2.open("temporal.bin", ios::out | ios::binary);
 
   if(f.is_open() && f2.is_open())

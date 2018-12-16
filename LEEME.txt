@@ -10,4 +10,4 @@ Para poder entrar al sistema, hay que introducir una clave de 5 dígitos
 
 INTRODUCIR LA SIGUIENTE CLAVE: 12341
 
-Siendo 1234 La clave de profesor y 1 los permisos del mismo
+Siendo 123 La clave de profesor y 1 los permisos del mismo
