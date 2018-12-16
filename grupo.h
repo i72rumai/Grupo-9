@@ -1,33 +1,37 @@
-//grupo.h
-//Esta clase recoge los datos de los grupos de la base de datos
+//Grupo.h
 
 #ifndef GRUPO_H
 #define GRUPO_H
-#include <iostream>
+
 #include <string>
+#include <iostream>
+#include <cstdlib>
 
-class Grupo
-{
-  private:
-    int numero_;
-    std::string liderg_;
-    int nmiembros_;
-    std::string miembros_[];
-  public:
-    Grupo(int numero, std::string liderg="", int nmiembros=1, std::string miembros={""})
-      {
-        numero_=numero;
-      };
+using namespace std;
 
-    inline void setNumero(int numero){numero_=numero;};
-    inline int getNumero();
+class Grupo{  // Clase Grupo
+private: //Parte privada
+    string liderg_;
+    string nmiembros_;
+    string numero_;
 
-    inline void setLiderg(std::string liderg){liderg_=liderg;};
-    inline std::string getLiderg(){return liderg_;};
+public: // Parte publica
+Grupo(){}// Constructor
 
-    inline void setNMiembros(int nmiembros){nmiembros_=nmiembros;};
-    inline int getNMiembros(){return nmiembros_;};
+  Grupo(string liderg, string numero, string nmiembros=0)// Declaramos las variables del constructor
+  {
+    liderg_=liderg; // Se igualan las variables privadas con las del constructor
+    nmiembros_=nmiembros;
+    numero_=numero;
+  };
 
+
+//FUNCIONES
+void BorrarGrupo(int numero)
+void MostrarGrupo(int numero)
+int ContarMiembros(int numero)
+void ModificarIntegrantes(string DNI, int numero,int nMiembros)
+void ModificarLider(string DNI,int numero)
 };
 
 #endif

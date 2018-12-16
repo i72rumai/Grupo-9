@@ -12,9 +12,10 @@ using namespace std;
 class Alumno: public Persona
 {
   private:
-    int grupo_;
-    bool lider_;
+    string grupo_;
+    string lider_;
   public:
+    Alumno(){};
     Alumno(int grupo, bool lider, string dni, string ApellidosNombre,
       int telefono, string email, int DPostal, string FechaNac):Persona(dni,
       ApellidosNombre, telefono, email, DPostal, FechaNac)

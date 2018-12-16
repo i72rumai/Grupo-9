@@ -4,7 +4,10 @@
 #ifndef PROFESOR_H
 #define PROFESOR_H
 #include <iostream>
-#include <string>
+#include <fstream>
+#include <cstring>
+#include <cstdlib>
+#include "alumno.h"
 #include "persona.h"
 
 using namespace std;
@@ -15,8 +18,9 @@ class Profesor: public Persona
     int CAgenda_;
     int rol_;
   public:
-    Profesor(int CAgenda, int rol, string dni, string ApellidosNombre,
-      int telefono, string email, int DPostal, string FechaNac):Persona(dni,
+    Profesor(){};
+    Profesor(int CAgenda, int rol, string dni="", string ApellidosNombre="",
+      int telefono=0, string email="", int DPostal=0, string FechaNac=""):Persona(dni,
       ApellidosNombre, telefono, email, DPostal, FechaNac)
       {
         CAgenda_=CAgenda;
@@ -28,8 +32,6 @@ class Profesor: public Persona
 
     inline void setRol(int rol){rol_=rol;};
     inline int getRol(){return rol_;};
-
-    bool buscarAlumno(string dni);
 };
 
 #endif

@@ -13,11 +13,12 @@ class Persona
   private:
     string dni_;
     string ApellidosNombre_;
-    int telefono_;
+    string telefono_;
     string email_;
-    int DPostal_;
+    string DPostal_;
     string FechaNac_;
   public:
+    Persona(){};
     Persona(string dni, string ApellidosNombre, int telefono, string email,
        int DPostal, string FechaNac)
     {
@@ -29,22 +30,22 @@ class Persona
       FechaNac_=FechaNac;
     };
 
-    inline void setDNI(std::string dni){dni_=dni;};
+    inline void setDNI(string dni){dni_=dni;};
     inline string getDNI(){return dni_;};
 
-    inline void setApellidosNombre(char ApellidosNombre){ApellidosNombre_=ApellidosNombre;};
+    inline void setApellidosNombre(string ApellidosNombre){ApellidosNombre_=ApellidosNombre;};
     inline string getApellidosNombre(){return ApellidosNombre_;};
 
-    inline void setTelefono(int telefono){telefono_=telefono;};
-    inline int getTelefono(){return telefono_;};
+    inline void setTelefono(string telefono){telefono_=telefono;};
+    inline string getTelefono(){return telefono_;};
 
-    inline void setEmail(std::string email){email_=email;};
+    inline void setEmail(string email){email_=email;};
     inline string getEmail(){return email_;};
 
-    inline void setDPostal(int DPostal){DPostal_=DPostal;};
-    inline int getDPostal(){return DPostal_;};
+    inline void setDPostal(string DPostal){DPostal_=DPostal;};
+    inline string getDPostal(){return DPostal_;};
 
-    inline void setFechaNac(std::string FechaNac){FechaNac_=FechaNac;};
+    inline void setFechaNac(string FechaNac){FechaNac_=FechaNac;};
     inline string getFechaNac(){return FechaNac_;};
 };
 
