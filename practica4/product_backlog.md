@@ -4,77 +4,77 @@
 ---
 0. Clases:
 
-### Tiempo estimado:
+* Tiempo estimado:
   180 minutos.
 
 1. Login:
 
-### Tiempo estimado:
+* Tiempo estimado:
   60 minutos
 
 
 2. :BuscarAlumno
 
-### Tiempo estimado:
+* Tiempo estimado:
   60 minutos
 
 
 3. InsertarAlumno
 
-### Tiempo estimado:
+* Tiempo estimado:
   60 minutos
 
 
 4. ModificarAlumno
 
-### Tiempo estimado:
+* Tiempo estimado:
   60 minutos
 
 5. Borraralumno:
 
-### Tiempo estimado:
+* Tiempo estimado:
   60 minutos
 
 6. ModificarIntegrantes
 
-### Tiempo estimado:
+* Tiempo estimado:
   60 minutos
 
 7. ModificarLider
 
-### Tiempo estimado:
+* Tiempo estimado:
   60 minutos
 
 8. ContarMiembros:
 
-### Tiempo estimado:
+* Tiempo estimado:
   60 minutos
 
 9. MostrarGrupo:
 
-### Tiempo estimado:
+* Tiempo estimado:
   60 minutos
 
 10. BorrarGrupo:
 
-### Tiempo estimado:
+* Tiempo estimado:
   60 minutos
 
 11. MostrarBaseDatos:
 
-### Tiempo estimado:
+* Tiempo estimado:
   60 minutos
 
 
 12. CopiaSeguridad:
 
-### Tiempo estimado:
+* Tiempo estimado:
   60 minutos
 
 
 13. BorrarBaseDatos:
 
-### Tiempo estimado:
+* Tiempo estimado:
   60 minutos
 
 ### Tiempo total:
