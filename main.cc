@@ -15,13 +15,16 @@ int main()
 
   if(login(codigo)==true)
   {
+	int opcion;
   do{
-    int opcion, permisos, opc;
-    string dni;
+    int permisos, opc, nmiembros, numero;
+    string dni, perm;
     Agenda ag;
     Grupo g;
+    string nombre, apellido1, apellido2, telefono,email,dpostal,fechanac, grupo, lider, ApellidosNombre;
 
-    permisos=atoi(argv[4]);
+    perm=codigo.substr(4,1);
+    permisos=atoi(perm.c_str());
 
 	opcion=menu();
         switch(opcion)
@@ -58,14 +61,14 @@ int main()
         cin>>grupo;
         cout<<endl<<"Introduzca si el alumno es lider (1->SI/0->NO): ";
         cin>>lider;
-        ApellidosNombre=apellido1+' '+apellido2+', '+nombre;
+        ApellidosNombre=apellido1+" "+apellido2+", "+nombre;
         ag.InsertarAlumno(dni, ApellidosNombre, telefono, email, dpostal, fechanac, lider, grupo);
         }
         break;
       case 3:
         cout<<endl<<"Introduzca el DNI del alumno que desea modificar: ";
         cin>>dni;
-        if(ag.BuscarAlumno(dni)!=)
+        if(ag.BuscarAlumno(dni)!=true)
         {
           cout<<endl<<"El alumno que desea introducir no existe en la base de datos";
         }
@@ -89,20 +92,21 @@ int main()
           cin>>grupo;
           cout<<endl<<"Introduzca si el alumno es lider (1->SI/0->NO): ";
           cin>>lider;
-          ApellidosNombre=apellido1+' '+apellido2+', '+nombre;
-          ModificarAlumno(dni, ApellidosNombre, telefono, email, dpostal, fechanac, lider, grupo);
+         ApellidosNombre=apellido1+" "+apellido2+", "+nombre;
+          ag.ModificarAlumno(dni, ApellidosNombre, telefono, email, dpostal, fechanac, lider, grupo);
         }
         break;
       case 4:
         cout<<endl<<"Introduzca el DNI del alumno que desea borrar: ";
         cin>>dni;
-	if(ag.BuscarAlumno==true)
+	if(ag.BuscarAlumno(dni)==true)
 	{
 	ag.BorrarAlumno(dni);
 	}
 	else
 	{
 	  cout<<"ERROR, el alumno no existe en la base de datos"<<endl;
+	}
         break;
       case 5:
 	if(permisos==1)
@@ -113,9 +117,10 @@ int main()
 	else
 	{
 	  cout<<"ERROR, no tienes los permisos necesarios"<<endl;
+	}
         break;
       case 6:
-        ag.MostarBaseDatos();
+        ag.MostrarBaseDatos();
         break;
       case 7:
 	if(permisos==1)
@@ -156,13 +161,9 @@ int main()
       case 0:
           cout<<endl<<"¿Desea salir del sistema? (Si=1, No=0) ";
           cin>>opc;
-          if(confirmacion==1)
+          if(opc==1)
           {
             cout<<"Saliendo del sistema..."<<endl;
-          }
-          else
-          {
-            opcion=NULL;
           }
         break;
 	default:
