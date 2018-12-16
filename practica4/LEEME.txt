@@ -1,0 +1,12 @@
+PRACTICA 4 IS
+
+Integrantes del grupo:
+- Ignacio Antonio Ruiz Martín-Romo
+- Alejandro Siles Jiménez
+- Jorge Ramírez Galván
+
+Para poder entrar al sistema, hay que introducir una clave de 4 dígitos
+
+INTRODUCIR LA SIGUIENTE CLAVE: 12341
+
+Siendo 123 La clave de profesor y 1 los permisos del mismo(1231)
