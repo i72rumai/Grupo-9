@@ -18,8 +18,8 @@ int main()
   do{
     int opcion, permisos, opc;
     string dni;
-    Agenda ag();
-    Grupo g();
+    Agenda ag;
+    Grupo g;
 
     permisos=atoi(argv[4]);
 

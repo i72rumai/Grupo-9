@@ -2,10 +2,11 @@
 //Contiene las funciones de la clase grupo
 
 #include "grupo.h"
+#include "agenda.h"
 
 //BuscarAlumno
 //Busca un alumno en la base de datos, si existe lo muestra y retorna true, si no, retorna false
-bool Agenda::BuscarAlumno(string DNI)
+bool Agenda::BuscarAlumno(string dni)
 {
   string linea; //Variable que lee cada dato del fichero binario
   ifstream f; //Declaramos el fichero
@@ -16,7 +17,7 @@ bool Agenda::BuscarAlumno(string DNI)
   {
     while(getline(f,linea, ' '))
     {
-	if(linea==DNI)
+	if(linea==dni)
 	{
 	  cout<<linea<<' ';
           getline(f,linea, ' ');
@@ -32,12 +33,12 @@ bool Agenda::BuscarAlumno(string DNI)
           getline(f,linea, ' ');
           cout<<linea<<' ';
           getline(f,linea, '\n');
-	  cout<<linea<<end;
+	  cout<<linea<<endl;
 	  f.close();
 	  return true;
         }
 
-        getline(f.linea,'\n');
+        getline(f,linea,'\n');
     }
     f.close();
     return false;
@@ -97,7 +98,6 @@ void Agenda::ModificarAlumno(string dni,string ApellidosNombre,string telefono, 
                 f2 << linea << ' ';
                 getline(f,linea,'\n');
                 f2 <<linea << endl;
-             }
           }
 
 	  f.close(); //Cerramos ambos ficheros
@@ -129,9 +129,9 @@ void Agenda::BorrarAlumno(string dni)
   f.open("alumnos.bin", ios::in | ios::binary);   //Abrimos ambos ficheros
   f2.open("temporal.bin", ios::out | ios::binary);
 
-  if(f.is_open && f2.is_open())
+  if(f.is_open() && f2.is_open())
   {
-       while(getline(entrada,linea, ' '))
+       while(getline(f,linea, ' '))
        {
 	   //Si encuentra al alumno, no lo introduce y salta a la siguiente línea
            if(linea==dni)
@@ -185,7 +185,7 @@ void Agenda::InsertarAlumno(string dni,string ApellidosNombre,string telefono, s
 
   if(f.is_open())
   {
-    f.seekg(0,entrada.end);   //Posiciona el cursor en el último elemento para añadir el nuevo alumno al final
+    f.seekg(0,f.end);   //Posiciona el cursor en el último elemento para añadir el nuevo alumno al final
 
     // Se insertan los datos del alumno
     f << dni <<' ';
@@ -196,9 +196,8 @@ void Agenda::InsertarAlumno(string dni,string ApellidosNombre,string telefono, s
     f << fechanac <<' ';
     f << lider <<' ';
     f << grupo <<'\n';
+   f.close();
   }
-
-  f.close();
   //Comprobación de seguridad
   else
   {
@@ -250,6 +249,8 @@ void Agenda::MostrarBaseDatos()
 //Crea una copia de seguridad de todos los alumnos de la base de datos
 void Agenda::CopiaSeguridad()
 {
+  string linea;
+
   ifstream f; //Fichero original
   ofstream f2; //Fichero copia de seguridad
 
@@ -258,7 +259,7 @@ void Agenda::CopiaSeguridad()
 
   if(f.is_open() && f2.is_open())
   {
-    while(getline(f, linea, ' '))
+    while(getline(f,linea, ' '))
     {
 	f2 << linea <<' ';
         getline(f,linea, ' ');
@@ -277,7 +278,7 @@ void Agenda::CopiaSeguridad()
         f2 <<linea << endl;
     }
     f.close();
-    f2.close()
+    f2.close();
   }
   //Comprobación de seguridad
   else

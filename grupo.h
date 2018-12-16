@@ -16,7 +16,7 @@ private: //Parte privada
     string numero_;
 
 public: // Parte publica
-Grupo(){}// Constructor
+Grupo(){};// Constructor
 
   Grupo(string liderg, string numero, string nmiembros=0)// Declaramos las variables del constructor
   {
@@ -25,6 +25,14 @@ Grupo(){}// Constructor
     numero_=numero;
   };
 
+	inline void setNumero(string numero){numero_=numero;};
+	inline string getNumero(){return numero_;};
+
+	inline void setLiderg(string liderg){liderg_=liderg;};
+	inline string getLiderg(){return liderg_;};
+
+	inline void setNmiembros(string nmiembros){nmiembros_=nmiembros;};
+	inline string getNmiembros(){return nmiembros_;};
 
 //FUNCIONES
 void BorrarGrupo(int numero);

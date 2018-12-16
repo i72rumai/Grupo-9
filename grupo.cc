@@ -1,9 +1,9 @@
 //grupo.cc
 
-#include "Grupo.h"
-#include "Alumno.h"
-#include "Agenda.h"
-#include "Persona.h"
+#include "grupo.h"
+#include "alumno.h"
+#include "agenda.h"
+#include "persona.h"
 
 using namespace std;
 
@@ -17,7 +17,7 @@ void Grupo:: BorrarGrupo(int numero)
   ofstream temporal;    //Fichero escritura
   principal.open("clase.bin", ios::in| ios::binary);    //Se abre el fichero principal
   temporal.open("Temporal.bin",ios::out|ios::binary);     //Se abre el fichero temporal
-  int borrar;
+  string borrar;
 
   if(principal.is_open() && temporal.is_open())//Si los ficheros están abiertos se hace lo siguiente(Por si hay algún fallo al abrirlo)
     {
@@ -39,8 +39,8 @@ void Grupo:: BorrarGrupo(int numero)
         //FIN LECTURA
         if(atoi(lectura.c_str())==numero)   //Borra el numero del grupo introducido
         {
-          aux.setNumero(0);
-          borrar=aux.getNumero();
+          aux.setGrupo(0);
+          borrar=aux.getGrupo();
           temporal<<borrar<<' ';
         }
         else
@@ -137,7 +137,7 @@ int Grupo::ContarMiembros(int numero)
 }
 
 
-void Grupo::ModificarIntegrantes(string DNI, int numero,int nMiembros)
+void Grupo::ModificarIntegrantes(string DNI, int numero, int nMiembros)
 {
   int eleccion;
   cout<<"1.Añadir integrante 2.Borrar integrante"<<endl;
@@ -149,7 +149,10 @@ void Grupo::ModificarIntegrantes(string DNI, int numero,int nMiembros)
     string lectura;   //Variable que recorre el fichero
     ifstream principal;   //Fichero principal
     ofstream temporal;    //Fichero temporal
-    int añadir;
+    string anadir, numer;
+
+	numer=numero;
+
     principal.open("clase.bin", ios::in| ios::binary);    //Abrimos el fichero principal
     temporal.open("Temporal.bin", ios::out | ios::binary);//Abrimos el fichero temporal
 
@@ -174,9 +177,9 @@ void Grupo::ModificarIntegrantes(string DNI, int numero,int nMiembros)
                       getline(principal,lectura, ' ');
                       temporal << lectura << ' ';
                       getline(principal,lectura, ' ');
-                      aux.setNumero(numero);
-                      añadir=aux.getNumero(); //Añade al alumno
-                      temporal<<añadir<<' ';
+                      aux.setGrupo(numer);
+                      anadir=aux.getGrupo(); //Añade al alumno
+                      temporal<<anadir<<' ';
                       getline(principal,lectura, '\n');
                       temporal << lectura <<endl;
                       //FIN LECTURA
@@ -227,7 +230,7 @@ void Grupo::ModificarIntegrantes(string DNI, int numero,int nMiembros)
         string lectura;   //Variable que recorre el fichero
         fstream principal;    //Fichero principal
         ofstream temporal;    //Fichero temporal
-        int borrar;
+        string borrar;
         principal.open("clase.bin", ios::in | ios::binary);   //Abrimos ambos ficheros
         temporal.open("Temporal.bin",ios::out|ios::binary);
 
@@ -250,8 +253,8 @@ void Grupo::ModificarIntegrantes(string DNI, int numero,int nMiembros)
                       getline(principal,lectura, ' ');
                       temporal << lectura << ' ';
                       getline(principal,lectura, ' ');
-                      aux.SetGrupo(0); //Borra al alumno del grupo
-                      borrar=aux.GetGrupo();
+                      aux.setGrupo(0); //Borra al alumno del grupo
+                      borrar=aux.getGrupo();
                       temporal<<borrar<<' ';
                       getline(principal,lectura, '\n');
                       temporal << lectura <<endl;

@@ -26,5 +26,5 @@ class Agenda : public Alumno
 	void MostrarBaseDatos();
 	void CopiaSeguridad();
 	void BorrarBaseDatos();
-
+};
 #endif
