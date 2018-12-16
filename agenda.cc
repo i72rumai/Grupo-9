@@ -6,7 +6,7 @@
 
 bool Agenda::BuscarAlumno(string dni)
 {
-  string linea; //Variable que lee cada dato del fichero binario
+  string linea; //Recorre el fichero
   ifstream f; //Declaramos el fichero
 
   f.open("clase.bin", ios::in | ios::binary);    //  Abrimos el fichero binario
@@ -49,11 +49,9 @@ bool Agenda::BuscarAlumno(string dni)
   }
 }
 
-//Modificar alumno
-//Crea un archivo secundario y traspasa todos los datos de un fichero a otro, si encuentra al alumno que se desea cambiar, se introducen sus datos
 void Agenda::ModificarAlumno(string dni,string ApellidosNombre,string telefono, string email, string dpostal, string fechanac, string lider, string grupo)
 {
-   string  linea;   //Variable que lee cada dato del fichero
+   string  linea;   //Variable que recorre el fichero
 
    ifstream f;    //Fichero principal donde están todos los alumnos
    ofstream f2;   //Fichero temporal
@@ -98,9 +96,9 @@ void Agenda::ModificarAlumno(string dni,string ApellidosNombre,string telefono, 
                 f2 <<linea << endl;
           }
 
-	  f.close(); //Cerramos ambos ficheros
+	  f.close(); //Cerramos los ficheros
 	  f2.close();
-          remove("clase.bin"); //Elimnamos el fichero original
+          remove("clase.bin"); //Eliminamos el fichero principal
           rename("temporal.bin", "clase.bin"); //Renombramos el fichero temporal y lo hacemos principal
       }
 
@@ -114,9 +112,6 @@ void Agenda::ModificarAlumno(string dni,string ApellidosNombre,string telefono, 
 }
 
 
-
-//Borrar Alumno
-//Busca un alumno por DNI y lo borra de la base de datos
 void Agenda::BorrarAlumno(string dni)
 {
   string linea;   //Declaramos un string para leer el fichero
@@ -124,7 +119,7 @@ void Agenda::BorrarAlumno(string dni)
   ifstream f;    //Declaramos un fichero de lectura
   ofstream f2;    //Declaramos un fichero de salida
 
-  f.open("clase.bin", ios::in | ios::binary);   //Abrimos ambos ficheros
+  f.open("clase.bin", ios::in | ios::binary);   //Abrimos los ficheros
   f2.open("temporal.bin", ios::out | ios::binary);
 
   if(f.is_open() && f2.is_open())
@@ -169,11 +164,6 @@ void Agenda::BorrarAlumno(string dni)
   }
 }
 
-
-
-
-//Insertar Alumno
-//Añade un nuevo alumno a la base de datos
 void Agenda::InsertarAlumno(string dni,string ApellidosNombre,string telefono, string email, string dpostal, string fechanac, string lider, string grupo)
 {
   string linea;   //Declaramos un string para leer el fichero
@@ -204,11 +194,9 @@ void Agenda::InsertarAlumno(string dni,string ApellidosNombre,string telefono, s
   }
 }
 
-//MostrarBaseDatos
-//Muestra todos los alumnos de la base de datos
 void Agenda::MostrarBaseDatos()
 {
-  string linea; //Variable que lee cada elemento del fichero
+  string linea; //Variable que recorre el fichero
 
   ifstream f;
   f.open("clase.bin", ios::in | ios::binary);
@@ -243,8 +231,6 @@ void Agenda::MostrarBaseDatos()
   }
 }
 
-//CopiaSeguridad
-//Crea una copia de seguridad de todos los alumnos de la base de datos
 void Agenda::CopiaSeguridad()
 {
   string linea;
@@ -253,7 +239,7 @@ void Agenda::CopiaSeguridad()
   ofstream f2; //Fichero copia de seguridad
 
   f.open("clase.bin", ios::in | ios::binary);
-  f.open("copiaseguridad.bin", ios::out | ios::binary);
+  f2.open("copiaseguridad.bin", ios::out | ios::binary);
 
   if(f.is_open() && f2.is_open())
   {
@@ -285,13 +271,11 @@ void Agenda::CopiaSeguridad()
   }
 }
 
-//BorrarBaseDatos
-//Borra todos los alumnos de la base de datos
 void Agenda::BorrarBaseDatos()
 {
-    ifstream f;   //Declaramos un fichero de lectura y uno de salida
+    ifstream f;   //Declaramos un fichero de lectura y uno de escritura
     ofstream f2;
-    f.open("clase.bin",ios::out| ios::binary);   //Abrimos ambos ficheros binarios
+    f.open("clase.bin",ios::out| ios::binary);   //Abrimos los ficheros binarios
     f2.open("nuevo.bin",ios::in| ios::binary);
 
     if(f.is_open() && f2.is_open())

@@ -13,7 +13,7 @@
 using namespace std;
 
 
-class Agenda : public Alumno
+class Agenda : public Alumno //Herencia de alumno
 {
   private:
 

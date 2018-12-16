@@ -28,7 +28,7 @@ int menu()
   cin>>opc;
   return opc;
 }
-
+//Para que no puedo entrar cualquiera al programa
 bool login(string codigo)
 {
   string code;

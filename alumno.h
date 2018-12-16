@@ -9,7 +9,7 @@
 
 using namespace std;
 
-class Alumno: public Persona
+class Alumno: public Persona //Herencia de persona
 {
   private:
     string grupo_;
