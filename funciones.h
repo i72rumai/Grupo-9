@@ -10,11 +10,12 @@
 #include "alumno.h"
 #include "persona.h"
 #include "grupo.h"
+#include "agenda.h"
 
 using namespace std;
 
 int menu();
-bool login(char* codigo);
+bool login(string codigo);
 
 
 #endif
