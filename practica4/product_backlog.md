@@ -2,55 +2,80 @@
 ---
 * Estudiamos la prioridad de cada una de las funciones dentro de nuestro programa.
 ---
+0. Clases:
+
+### Tiempo estimado:
+  180 minutos.
+
 1. Login:
 
 ### Tiempo estimado:
-  30 minutos
+  60 minutos
 
 
-2. :
+2. :BuscarAlumno
 
 ### Tiempo estimado:
   60 minutos
 
 
-3. Buscar_alumno:
+3. InsertarAlumno
 
 ### Tiempo estimado:
   60 minutos
 
 
-4. 
+4. ModificarAlumno
+
+### Tiempo estimado:
+  60 minutos
+
+5. Borraralumno:
+
+### Tiempo estimado:
+  60 minutos
+
+6. ModificarIntegrantes
+
+### Tiempo estimado:
+  60 minutos
+
+7. ModificarLider
+
+### Tiempo estimado:
+  60 minutos
+
+8. ContarMiembros:
+
+### Tiempo estimado:
+  60 minutos
+
+9. MostrarGrupo:
+
+### Tiempo estimado:
+  60 minutos
+
+10. BorrarGrupo:
+
+### Tiempo estimado:
+  60 minutos
+
+11. MostrarBaseDatos:
 
 ### Tiempo estimado:
   60 minutos
 
 
-
-5. Modificar_alumno:
-
-### Tiempo estimado:
-  60 minutos
-
-
-6. Modificar_lider:
+12. CopiaSeguridad:
 
 ### Tiempo estimado:
   60 minutos
 
 
-7. Borrar_alumno:
+13. BorrarBaseDatos:
 
 ### Tiempo estimado:
   60 minutos
 
-
-8. Añadir_alumno:
-
-### Tiempo estimado:
-  60 minutos
-
-
-9.
-### Tiempo estimado:
-  60 minutos
+### Tiempo total:
+  16 horas
