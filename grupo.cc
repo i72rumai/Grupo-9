@@ -57,8 +57,6 @@ void Grupo:: BorrarGrupo(int numero)
       rename("Temporal.bin", "clase.bin");//Cambiamos el nombre al temporal para que se convierta en el pricipal
     }
 
-  }
-
     else// Si no se abre el fichero
     {
       cout<<"Error al abrir fichero"<<endl;
@@ -272,27 +270,28 @@ void Grupo::ModificarIntegrantes(string DNI, int numero,int nMiembros)
                 rename("Temporal.bin", "clase.bin");//Cambiamos el nombre al temporal para que se convierta en el pricipal
               }
 
+              else
+              {   //Si el fichero no se abre
+                cout<<"Error al abrir el fichero"<<endl;
+              }
+
             }
 
-              else{   //Si el fichero no se abre
-                cout<<"El fichero no se abrió correctamente"<<endl;
+              if(eleccion!=1 && eleccion!=2)
+              {
+                cout<<"No existe esa elección"<<endl;
               }
         }
-        if(eleccion!=1 && eleccion!=2)
-        {
-          cout<<"No existe esa elección"<<endl;
-        }
-      }
-}
 
    void Grupo:: ModificarLider(string DNI,int numero)
    {
-      string lectura, p;    //Variable para recorrer los ficheros
+      string lectura, lider;    //Variable para recorrer los ficheros
       ifstream principal;//Fichero principal
       ofstream temporal;//Fichero temporal
       principal.open("clase.bin", ios::in|ios::binary);     //Se abre el fichero principal
       temporal.open("Temporal.bin", ios::out | ios::binary);// Se abre el fichero temporal
-        if(principal.is_open() && temporal.is_open()){
+        if(principal.is_open() && temporal.is_open())
+        {
           while(getline(principal,lectura,' '))
           {
               if(lectura==DNI)//Si el Dni introducido se encuentra en el fichero
@@ -312,8 +311,8 @@ void Grupo::ModificarIntegrantes(string DNI, int numero,int nMiembros)
                 getline(principal,lectura, ' ');
                   temporal << lectura << ' ';
                 getline(principal,lectura,'\n');
-                    p="True";
-                    temporal << p <<endl;
+                    lider="True";
+                    temporal << lider <<endl;
                     //FIN LECTURA
               }
 
@@ -337,15 +336,14 @@ void Grupo::ModificarIntegrantes(string DNI, int numero,int nMiembros)
                 {
                   temporal << lectura << ' ';
                 getline(principal,lectura,'\n');
-                    p="False";
-                    temporal << p <<endl;
+                    lider="False";
+                    temporal << lider <<endl;
                 }
                 else
                 {
                   temporal << lectura << ' ';
                   getline(principal,lectura, '\n');
                   temporal << lectura << endl;
-
                 }
               }
             }
@@ -360,8 +358,3 @@ void Grupo::ModificarIntegrantes(string DNI, int numero,int nMiembros)
           remove("clase.bin");
           rename("Temporal.bin", "clase.bin");//Cambiamos el nombre al temporal para que se convierta en el principal
       }
-                else
-                {
-                  cout<<"Error al abrir el fichero"<<endl;
-                }
-}
