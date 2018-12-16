@@ -27,11 +27,11 @@ Grupo(){}// Constructor
 
 
 //FUNCIONES
-void BorrarGrupo(int numero)
-void MostrarGrupo(int numero)
-int ContarMiembros(int numero)
-void ModificarIntegrantes(string DNI, int numero,int nMiembros)
-void ModificarLider(string DNI,int numero)
+void BorrarGrupo(int numero);
+void MostrarGrupo(int numero);
+int ContarMiembros(int numero);
+void ModificarIntegrantes(string DNI, int numero,int nMiembros);
+void ModificarLider(string DNI,int numero);
 };
 
 #endif

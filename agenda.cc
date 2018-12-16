@@ -52,7 +52,7 @@ bool Agenda::BuscarAlumno(string DNI)
 
 //Modificar alumno
 //Crea un archivo secundario y traspasa todos los datos de un fichero a otro, si encuentra al alumno que se desea cambiar, se introducen sus datos
-void Agenda::ModificarAlumno(string dni,string ApellidosNombre,string telefono, string email, string dpostal, stringfechanac, string lider, string grupo)
+void Agenda::ModificarAlumno(string dni,string ApellidosNombre,string telefono, string email, string dpostal, string fechanac, string lider, string grupo)
 {
    string  linea;   //Variable que lee cada dato del fichero
 
@@ -176,7 +176,7 @@ void Agenda::BorrarAlumno(string dni)
 
 //Insertar Alumno
 //Añade un nuevo alumno a la base de datos
-void Agenda::InsertarAlumno(string dni,string ApellidosNombre,string telefono, string email, string dpostal, stringfechanac, string lider, string grupo)
+void Agenda::InsertarAlumno(string dni,string ApellidosNombre,string telefono, string email, string dpostal, string fechanac, string lider, string grupo)
 {
   string linea;   //Declaramos un string para leer el fichero
 

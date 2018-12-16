@@ -24,11 +24,11 @@ class Alumno: public Persona
         lider_=lider;
       }
 
-    inline void setGrupo(int grupo){grupo_=grupo;};
-    inline int getGrupo(){return grupo_;};
+    inline void setGrupo(string grupo){grupo_=grupo;};
+    inline string getGrupo(){return grupo_;};
 
-    inline void setLider(bool lider){lider_=lider;};
-    inline bool getLider(){return lider_;};
+    inline void setLider(string lider){lider_=lider;};
+    inline string getLider(){return lider_;};
 
 };
 

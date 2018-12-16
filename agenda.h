@@ -19,13 +19,10 @@ class Agenda : public Alumno
 
   public:
     Agenda(){};
-    Agenda(string dni,string ApellidosNombre,string telefono, string email, string dpostal, stringfechanac, string lider, string grupo):
-	 Alumno(dni,ApellidosNombre, telefono, email, dpostal, fechanac, lider, grupo){};
-
 	bool BuscarAlumno(string dni);
-	void ModificarAlumno(string dni,string ApellidosNombre,string telefono, string email, string dpostal, stringfechanac, string lider, string grupo);
+	void ModificarAlumno(string dni,string ApellidosNombre,string telefono, string email, string dpostal, string fechanac, string lider, string grupo);
 	void BorrarAlumno(string dni);
-	void InsertarAlumno(string dni,string ApellidosNombre,string telefono, string email, string dpostal, stringfechanac, string lider, string grupo);
+	void InsertarAlumno(string dni,string ApellidosNombre,string telefono, string email, string dpostal, string fechanac, string lider, string grupo);
 	void MostrarBaseDatos();
 	void CopiaSeguridad();
 	void BorrarBaseDatos();
