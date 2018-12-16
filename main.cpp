@@ -11,7 +11,7 @@ int main(int argc, char** argv)
 {
   if(login(argv[1])==true)
   {
-    int opcion, permisos, confirmacion;
+    int opcion, permisos, confirmacion, numero, nmiembros;
     string dni, apellido1, apellido2, nombre, telefono, email, dpostal, fechanac, lider, ApellidosNombre, grupo;
 
     permisos=atoi(argv[4]);
@@ -92,14 +92,35 @@ int main(int argc, char** argv)
         BorrarAlumno(dni);
         break;
       case 5:
-        MostarBaseDatos();
+        CopiaSeguridad();
         break;
       case 6:
-        CopiaSeguridad();
+        MostarBaseDatos();
         break;
       case 7:
         BorrarBaseDatos();
         break;
+      case 8:
+        cout<<endl<<"Introduzca el numero del grupo que desea borrar: ";
+        cin>>numero;
+        BorrarGrupo(numero);
+      case 9:
+        cout<<endl<<"Introduzca el numero del grupo que desea mostrar: ";
+        cin>>numero;
+        MostrarGrupo(numero);
+      case 10:
+        cout<<endl<<"Introduzca el numero del grupo que desea modificar: ";
+        cin>>numero;
+        nmiembros=ContarMiembros(numero);
+        cout<<endl<<"Introduzca el dni del alumno: ";
+        cin>>dni;
+        ModificarIntegrantes(dni, numero, nmiembros);
+      case 11:
+        cout<<endl<<"Introduzca el numero del grupo del que desea cambiar de lider: ";
+        cin>>numero;
+        cout<<endl<<"Introduzca el dni del alumno que quiere asignar como lider: ";
+        cin>>dni;
+        ModificarLider(dni, numero);
       case 0:
           cout<<endl<<"¿Desea salir del sistema? (Si->1//No->0) ";
             cin >> confirmacion;
